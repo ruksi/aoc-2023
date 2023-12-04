@@ -18,6 +18,21 @@ cargo run --release --quiet --bin day01-part2 day01/examples/part2-example.txt
 Each day has a README with the challenge description, example inputs in `examples`
 and the solver code is usually in `dayXX/src/lib.rs`.
 
+## 📝 Development
+
+To start a new day of challenges, base it on day00:
+
+```bash
+NEW_DAY=day02
+cp -r day00 $NEW_DAY
+find $NEW_DAY -type f -exec sed -i "s/day00/$NEW_DAY/g" {} \;
+mv $NEW_DAY/src/bin/day00-part1.rs $NEW_DAY/src/bin/$NEW_DAY-part1.rs
+mv $NEW_DAY/src/bin/day00-part2.rs $NEW_DAY/src/bin/$NEW_DAY-part2.rs
+# and add it to root Cargo.toml members
+```
+
+TODO: automate this when I feel like it
+
 ## 💡 Preface
 
 I wanted to keep the base dependencies to a minimum; normally I would've used stuff like

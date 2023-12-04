@@ -16,6 +16,13 @@ name = "basics"
 version = "0.1.0"
 
 [[package]]
+name = "day00"
+version = "0.1.0"
+dependencies = [
+ "basics",
+]
+
+[[package]]
 name = "day01"
 version = "0.1.0"
 dependencies = [
