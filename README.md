@@ -23,15 +23,8 @@ and the solver code is usually in `dayXX/src/lib.rs`.
 To start a new day of challenges, base it on day00:
 
 ```bash
-NEW_DAY=day02
-cp -r day00 $NEW_DAY
-find $NEW_DAY -type f -exec sed -i "s/day00/$NEW_DAY/g" {} \;
-mv $NEW_DAY/src/bin/day00-part1.rs $NEW_DAY/src/bin/$NEW_DAY-part1.rs
-mv $NEW_DAY/src/bin/day00-part2.rs $NEW_DAY/src/bin/$NEW_DAY-part2.rs
-# and add it to root Cargo.toml members
+NEW_DAY=day02 ./rise-and-shine.sh
 ```
-
-TODO: automate this when I feel like it
 
 ## 💡 Preface
 
