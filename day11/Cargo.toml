@@ -1,0 +1,11 @@
+[package]
+name = "day11"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+doctest = false
+
+[dependencies]
+basics = { path = "../basics" }
+itertools = "0.12"
